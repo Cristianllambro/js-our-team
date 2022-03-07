@@ -41,7 +41,7 @@ const namePeople = [
 
 //add all card
 
-for (let i = 0; i < namePeople.length; i++) {
+for (let i = 0; i < 6; i++) {
     generateCard(namePeople[i].image, namePeople[i].name, namePeople[i].job)
 }
 
