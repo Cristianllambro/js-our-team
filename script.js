@@ -1,5 +1,6 @@
 const resultTeam = document.getElementById('team');
 let container = document.querySelector('.team-container');
+
 const namePeople = [
     {
         name: 'Wayne barnett',
@@ -29,17 +30,18 @@ const namePeople = [
     {
         name: 'Barbara Ramos',
         job: 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg'
+        image: 'img/barbara-ramos-graphic-designer.jpg'
     },
 
 ];
 
+
+let image = document.createElement('img');
 for (let i = 0; i < 6; i++) {
     let cardUser = document.createElement('team-card');
     cardUser.classList.add('card-image');
     cardUser.classList.add('card-text');
-    cardUser.innerHTML = namePeople[i].name;
-    cardUser.innerHTML = namePeople[i].job;
+    cardUser.innerHTML = `${namePeople[i].name} <br> ${namePeople[i].job}`;
 
     container.append(cardUser);
 }
