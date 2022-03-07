@@ -45,7 +45,7 @@ for (let i = 0; i < 6; i++) {
     generateCard(namePeople[i].image, namePeople[i].name, namePeople[i].job)
 }
 
-
+// function for create card general mode
 function generateCard (image, names, role) {
     let cardUser = document.createElement('div');
     cardUser.classList.add('team-card');
@@ -61,14 +61,17 @@ function generateCard (image, names, role) {
 
 // add card with input
 btnAdd.addEventListener('click', function() {
+
+    //add variable input for user
     let newUser = {
         name: nameUser.value,
         job: roleUser.value,
         image: image.value
     }
 
-    namePeople.push(newUser);
     generateCard(image.value, nameUser.value, roleUser.value);
+    namePeople.push(newUser);
+    //clear input
     nameUser.value = '';
     roleUser.value = '';
     image.value = '';
