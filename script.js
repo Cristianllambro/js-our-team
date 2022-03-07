@@ -5,27 +5,27 @@ const namePeople = [
     {
         name: 'Wayne barnett',
         job: 'Founder & CEO',
-        image: 'wayne-barnett-founder-ceo.jpg'
+        image: 'img/wayne-barnett-founder-ceo.jpg'
     },
     {
         name: 'Angela Caroll',
         job: 'Chif Editor',
-        image: 'angela-carol-chif-editor.jpg'
+        image: 'img/angela-caroll-chief-editor.jpg'
     },
     {
         name: 'Walter Gordon',
         job: 'Office Manager',
-        image: 'walter-gordon-office-manager.jpg'
+        image: 'img/walter-gordon-office-manager.jpg'
     },
     {
         name: 'Angela Lopez',
         job: 'Social Media Menager',
-        image: 'angela-lopez-social-media-manager.jpg'
+        image: 'img/angela-lopez-social-media-manager.jpg'
     },
     {
         name: 'Scott Estrada',
         job: 'Dveloper',
-        image: 'scott-estrada-developer.jpg'
+        image: 'img/scott-estrada-developer.jpg'
     },
     {
         name: 'Barbara Ramos',
@@ -41,7 +41,7 @@ for (let i = 0; i < 6; i++) {
     let cardUser = document.createElement('team-card');
     cardUser.classList.add('card-image');
     cardUser.classList.add('card-text');
-    cardUser.innerHTML = `${namePeople[i].name} <br> ${namePeople[i].job}`;
+    cardUser.innerHTML = `<img src="${namePeople[i].image}"> <h3>${namePeople[i].name}</h3> <p>${namePeople[i].job}</p>`;
 
     container.append(cardUser);
 }
