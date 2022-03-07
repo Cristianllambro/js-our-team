@@ -69,5 +69,8 @@ btnAdd.addEventListener('click', function() {
 
     namePeople.push(newUser);
     generateCard(image.value, nameUser.value, roleUser.value);
+    nameUser.value = '';
+    roleUser.value = '';
+    image.value = '';
 })
 
